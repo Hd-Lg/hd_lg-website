@@ -1,6 +1,6 @@
 import "../styles/globals.css";
-import Header from "./Header";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 export default function RootLayout({
 	children,
@@ -13,7 +13,7 @@ export default function RootLayout({
 				<title>Hd-Lg</title>
 			</head>
 			<body>
-				<Header />
+				<Navbar />
 				{children}
 				<Footer />
 			</body>
