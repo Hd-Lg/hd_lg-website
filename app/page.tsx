@@ -1,18 +1,23 @@
-import React from "react";
+import About from "./About";
+import Hero from "./Hero";
+import Projects from "./Projects";
+import Skill from "./Skill";
 
-import { Hero, Skills } from "../components";
-
-type Props = {};
-
-export default function page({}: Props) {
+export default function Home() {
 	return (
-		<main className="bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80s">
-			<section className="snap-start">
+		<div className="h-screen snap-y snap-mandatory z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+			<section id="hero" className="snap-start">
 				<Hero />
 			</section>
-			<section className="snap-center">
-				<Skills />
+			<section id="about" className="snap-center">
+				<About />
 			</section>
-		</main>
+			<section id="skills" className="snap-start">
+				<Skill />
+			</section>
+			<section id="projects" className="snap-start">
+				<Projects />
+			</section>
+		</div>
 	);
 }

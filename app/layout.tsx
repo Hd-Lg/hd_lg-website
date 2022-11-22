@@ -1,6 +1,10 @@
-import "../styles/globals.css";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import "./globals.css";
+import { Roboto } from "@next/font/google";
+import Header from "./Header";
+
+const roboto = Roboto({
+	weight: "500",
+});
 
 export default function RootLayout({
 	children,
@@ -8,14 +12,13 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html>
-			<head>
-				<title>Hd-Lg</title>
-			</head>
+		<html
+			lang="en"
+			className={`${roboto.className} text-white bg-[#242424] `}>
+			<head />
 			<body>
-				<Navbar />
+				<Header />
 				{children}
-				<Footer />
 			</body>
 		</html>
 	);
