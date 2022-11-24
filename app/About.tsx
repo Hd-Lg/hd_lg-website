@@ -26,12 +26,17 @@ const About = (props: Props) => {
 					background about me
 				</h4>
 				<p className="text-sm">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-					Dolore magni sed, reprehenderit placeat eius, quae iusto
-					totam consectetur itaque perspiciatis consequuntur cum
-					cupiditate facilis, doloribus vel. Reiciendis ipsa explicabo
-					quae.
+					I&apos;m in retraining to become a React & React Native
+					developer with the end goal of becoming a full-stack dev.
 				</p>
+				<p className="text-sm">
+					I&apos;ve a master degree in Innovation and Management of
+					Technology with a specialization in entrepreneurship.
+					I&apos;ve started a side project (for the fun of it) by
+					running servers for some projects. I really had fun with it
+					which led me to learn more about programming.
+				</p>
+				<p className="text-sm">And here I am today.</p>
 			</div>
 		</div>
 	);

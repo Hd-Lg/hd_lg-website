@@ -1,7 +1,7 @@
 import About from "./About";
 import Hero from "./Hero";
 import Projects from "./Projects";
-import Skill from "./Skill";
+import Skills from "./Skills";
 
 export default function Home() {
 	return (
@@ -13,7 +13,7 @@ export default function Home() {
 				<About />
 			</section>
 			<section id="skills" className="snap-start">
-				<Skill />
+				<Skills />
 			</section>
 			<section id="projects" className="snap-start">
 				<Projects />

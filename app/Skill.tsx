@@ -1,21 +1,21 @@
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
-type Props = {};
+type Props = {
+	image: StaticImageData;
+	text: string;
+};
 
-const Skill = (props: Props) => {
+const Skill = ({ image, text }: Props) => {
 	return (
-		<div className="flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center">
-			<h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-				Skills
-			</h3>
-			<div className="grid grid-cols-4 gap-5">
-				{/* Add logo of languages */}
-				<p>Test</p>
-				<p>Test</p>
-				<p>Test</p>
-				<p>Test</p>
-				<p>Test</p>
-			</div>
+		<div className="flex flex-col justify-center m-3">
+			<Image
+				src={image}
+				alt={`image of ${text}`}
+				placeholder="blur"
+				className="rounded-3xl h-24 w-24 bg-white mx-auto"
+			/>
+			<p className="text-xl mt-2 uppercase text-center">{text}</p>
 		</div>
 	);
 };
