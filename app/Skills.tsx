@@ -1,59 +1,25 @@
-import React from "react";
-import Skill from "./Skill";
+import Skill from './Skill';
 
-import {
-	html,
-	ant_design,
-	blender,
-	chakraui,
-	css,
-	express,
-	figma,
-	firebase,
-	git,
-	github,
-	illustrator,
-	indesign,
-	material,
-	js,
-	mongodb,
-	node,
-	react,
-	redux,
-	spline,
-	tailwindcss,
-	typescript,
-} from "../assets";
+import { firebase, js, mongodb, react, typescript } from '../assets';
 
 type Props = {};
 
 const Skills = (props: Props) => {
 	return (
-		<div className="flex relative flex-col text-center max-w-[2000px] min-h-screen justify-center mx-auto items-center">
-			<h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+		<div className='flex relative flex-col text-center max-w-[2000px] min-h-screen justify-center mx-auto items-center'>
+			<h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-s2xl'>
 				Skills
 			</h3>
-			<h5>My main programming languages:</h5>
-			<div className="flex flex-row">
-				<Skill image={html} text="html" />
-				<Skill image={css} text="css" />
-				<Skill image={js} text="js" />
-				<Skill image={react} text="react/react native" />
+			<h5 className='mb-3'>My main programming languages:</h5>
+			<div className='grid grid-cols-2 gap-3'>
+				<Skill image={js} text='js' />
+				<Skill image={react} text='react/react native' />
+				<Skill image={typescript} text='typescript' />
 			</div>
-			<h5>UI libraries I&apos;m familiar with:</h5>
-			<div className="flex flex-row">
-				<Skill image={ant_design} text="ant design" />
-				<Skill image={chakraui} text="chakra ui" />
-				<Skill image={material} text="material" />
-				<Skill image={tailwindcss} text="tailwind css" />
-			</div>
-			<h5>Design Tools:</h5>
-			<div className="flex flex-row">
-				<Skill image={figma} text="figma" />
-				<Skill image={illustrator} text="illustrator" />
-				<Skill image={indesign} text="indesign" />
-				<Skill image={blender} text="blender" />
-				<Skill image={spline} text="spline 3D" />
+			<h5 className='mb-3 mt-5'>Some tools:</h5>
+			<div className='grid grid-cols-2 gap-3'>
+				<Skill image={mongodb} text='MongoDB' />
+				<Skill image={firebase} text='Firebase' />
 			</div>
 		</div>
 	);

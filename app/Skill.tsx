@@ -1,5 +1,4 @@
-import Image, { StaticImageData } from "next/image";
-import React from "react";
+import Image, { StaticImageData } from 'next/image';
 
 type Props = {
 	image: StaticImageData;
@@ -8,14 +7,13 @@ type Props = {
 
 const Skill = ({ image, text }: Props) => {
 	return (
-		<div className="flex flex-col justify-center m-3">
-			<Image
-				src={image}
-				alt={`image of ${text}`}
-				placeholder="blur"
-				className="rounded-3xl h-24 w-24 bg-white mx-auto"
-			/>
-			<p className="text-xl mt-2 uppercase text-center">{text}</p>
+		<div className='flex flex-col items-center border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'>
+			<Image className='h-12 w-12 bg-transparent' src={image} alt='' />
+			<div className='flex flex-col justify-between p-4'>
+				<h5 className='mb-2 text-xl font-bold tracking-wide  text-white uppercase'>
+					{text}
+				</h5>
+			</div>
 		</div>
 	);
 };
