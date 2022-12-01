@@ -10,7 +10,7 @@ const Hero = (props: Props) => {
 					React & React Native Developer
 				</h2>
 				<h1 className='text-5xl lg:text-6xl font-semibold px-10 mt-4'>
-					Hd-Lg
+					Hadrien-Lg
 				</h1>
 			</div>
 			<div className='mt-4 space-x-6'>
