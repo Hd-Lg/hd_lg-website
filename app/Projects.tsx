@@ -1,6 +1,6 @@
 import Project from './Project';
 
-import blender from '../assets/icons/blender.png';
+import projectsData from './projectsData';
 
 type Props = {};
 
@@ -11,19 +11,18 @@ const Projects = (props: Props) => {
 				Projects
 			</h3>
 			<div className='flex flex-row space-x-4 overflow-x-scroll max-w-[80%] mx-auto scrollbar scrollbar-track-white scrollbar-thumb-[#F7AB0A]/80'>
-				<Project
-					image={blender}
-					title='Airbnb'
-					text={[
-						'Tech 1',
-						'Tech 2',
-						'Tech 3',
-						'Tech 4',
-						'Tech 5',
-						'Tech 6',
-					]}
-					link='link site'
-				/>
+				{projectsData.map(
+					({ id, image, image2, title, text, link }) => (
+						<Project
+							image={image}
+							image2={image2}
+							title={title}
+							text={text}
+							link={link}
+							key={id}
+						/>
+					)
+				)}
 			</div>
 		</div>
 	);
