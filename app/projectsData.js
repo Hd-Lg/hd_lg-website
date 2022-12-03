@@ -14,7 +14,8 @@ let projectsData = [
 		image2: hd_lg2,
 		title: 'Hd-Lg Website',
 		text: ['TypeScript', 'NextJS 13', 'TailwindCSS'],
-		link: 'https://github.com/Hd-Lg/hd_lg-website',
+		github: 'https://github.com/Hd-Lg/hd_lg-website',
+		website: 'https://github.com/Hd-Lg/hd_lg-website',
 	},
 	{
 		id: 1,
@@ -22,7 +23,8 @@ let projectsData = [
 		image2: business_dashboard2,
 		title: 'Business Dashboard',
 		text: ['React', 'React Context', 'SyncFusion', 'TailwindCSS'],
-		link: 'https://hd-lg.github.io/business_dashboard/',
+		website: 'https://hd-lg.github.io/business_dashboard/',
+		github: '',
 	},
 	{
 		id: 2,
@@ -30,7 +32,8 @@ let projectsData = [
 		image2: tesla_3D2,
 		title: '3D Background Video Tesla',
 		text: ['Blender', 'HTML/CSS', '3D'],
-		link: 'https://hd-lg.github.io/3d_tesla-website/',
+		website: 'https://hd-lg.github.io/3d_tesla-website/',
+		github: '',
 	},
 	// {
 	// 	id: 3,

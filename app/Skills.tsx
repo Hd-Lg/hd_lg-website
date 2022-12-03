@@ -1,7 +1,5 @@
 import Skill from './Skill';
 
-import { firebase, js, mongodb, react, typescript } from '../assets';
-
 type Props = {};
 
 const Skills = (props: Props) => {
@@ -10,16 +8,33 @@ const Skills = (props: Props) => {
 			<h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-s2xl'>
 				Skills
 			</h3>
-			<h5 className='mb-3'>My main programming languages:</h5>
-			<div className='grid grid-cols-2 gap-3'>
-				<Skill image={js} text='js' />
-				<Skill image={react} text='react/react native' />
-				<Skill image={typescript} text='typescript' />
-			</div>
-			<h5 className='mb-3 mt-5'>Some tools:</h5>
-			<div className='grid grid-cols-2 gap-3'>
-				<Skill image={mongodb} text='MongoDB' />
-				<Skill image={firebase} text='Firebase' />
+			<div className='grid grid-cols-2 gap-8 text-left'>
+				<div className='bg-gray-700 p-10 rounded-3xl min-w-[400px]'>
+					<h3 className='text-2xl text-center mb-8'>
+						Frontend Development
+					</h3>
+					<div className='grid grid-cols-2 gap-8'>
+						<Skill title='React' level='Experienced' />
+						<Skill title='React Native' level='Intermediate' />
+						<Skill title='Typescript' level='Intermediate' />
+						<Skill title='JavaScript' level='Intermediate' />
+						<Skill title='Tailwind CSS' level='Experienced' />
+						<Skill title='Material UI' level='Experienced' />
+					</div>
+				</div>
+
+				<div className='bg-gray-700 p-10 rounded-3xl min-w-[400px]'>
+					<h3 className='text-2xl text-center mb-8'>
+						Backend Development
+					</h3>
+					<div className='grid grid-cols-2 gap-8'>
+						<Skill title='React' level='Experienced' />
+						<Skill title='Node JS' level='Experienced' />
+						<Skill title='MongoDB' level='Intermediate' />
+						<Skill title='Firebase' level='Experienced' />
+						<Skill title='MySQL' level='Basic' />
+					</div>
+				</div>
 			</div>
 		</div>
 	);

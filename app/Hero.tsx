@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 type Props = {};
 
 const Hero = (props: Props) => {
@@ -14,15 +12,15 @@ const Hero = (props: Props) => {
 				</h1>
 			</div>
 			<div className='mt-4 space-x-6'>
-				<Link href={'#about'}>
+				<a href={'#about'}>
 					<button className='heroButton'>About</button>
-				</Link>
-				<Link href={'#skills'}>
+				</a>
+				<a href={'#skills'}>
 					<button className='heroButton'>Skills</button>
-				</Link>
-				<Link href={'#projects'}>
+				</a>
+				<a href={'#projects'}>
 					<button className='heroButton'>Projects</button>
-				</Link>
+				</a>
 			</div>
 		</div>
 	);

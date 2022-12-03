@@ -6,10 +6,11 @@ type Props = {
 	image2: any;
 	title: string;
 	text: string[];
-	link: string;
+	website: string;
+	github: string;
 };
 
-const Project = ({ image, image2, title, text, link }: Props) => {
+const Project = ({ image, image2, title, text, website, github }: Props) => {
 	let words: string[] = [...text];
 
 	return (
@@ -37,11 +38,21 @@ const Project = ({ image, image2, title, text, link }: Props) => {
 						</ol>
 					))}
 				</div>
-				<Link
-					href={link}
-					className='mt-5 text-gray-600 hover:underline cursor-pointer hover:text-white '>
-					Click here to visit it!
-				</Link>
+				<button>
+					<Link
+						href={github}
+						className='mt-5 text-gray-600 hover:underline cursor-pointer hover:text-white '>
+						GitHub
+					</Link>
+				</button>
+
+				<button className='border border-gray-600 p-2 rounded-xl ml-3 hover:border-white'>
+					<Link
+						href={website}
+						className='mt-5 text-gray-600 hover:underline cursor-pointer hover:text-white '>
+						Live Demo
+					</Link>
+				</button>
 			</div>
 		</div>
 	);
