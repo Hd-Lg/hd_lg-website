@@ -28,7 +28,6 @@ const Skills = (props: Props) => {
 						Backend Development
 					</h3>
 					<div className='grid grid-cols-2 gap-8'>
-						<Skill title='React' level='Experienced' />
 						<Skill title='Node JS' level='Experienced' />
 						<Skill title='MongoDB' level='Intermediate' />
 						<Skill title='Firebase' level='Experienced' />
