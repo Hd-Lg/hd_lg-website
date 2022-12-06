@@ -19,12 +19,12 @@ const About = (props: Props) => {
 			/>
 			<div className='space-y-5 px-0 md:px-10'>
 				<div className='flex justify-evenly'>
-					<article className='bg-gray-700 border border-transparent rounded-xl p-8 text-center hover:bg-transparent hover:border-white'>
+					<article className='bg-gray-700 border border-transparent rounded-xl p-8 text-center hover:bg-transparent hover:border-white cardNeumorph'>
 						<AcademicCapIcon className='w-6 mx-auto mb-3' />
 						<h5>Experience</h5>
 						<small>1 Year Learning</small>
 					</article>
-					<article className='bg-gray-700 border border-transparent rounded-xl p-8 text-center hover:bg-transparent hover:border-white'>
+					<article className='bg-gray-700 border border-transparent rounded-xl p-8 text-center hover:bg-transparent hover:border-white cardNeumorph'>
 						<ArchiveBoxIcon className='w-6 mx-auto mb-3' />
 						<h5>Projects</h5>
 						<small>25+ Completed</small>

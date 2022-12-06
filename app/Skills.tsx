@@ -9,7 +9,7 @@ const Skills = (props: Props) => {
 				Skills
 			</h3>
 			<div className='grid grid-cols-2 gap-8 text-left'>
-				<div className='bg-gray-700 p-10 rounded-3xl min-w-[400px]'>
+				<div className='bg-gray-700 p-10 rounded-3xl min-w-[400px] bigCardNeumorph'>
 					<h3 className='text-2xl text-center mb-8'>
 						Frontend Development
 					</h3>
@@ -23,7 +23,7 @@ const Skills = (props: Props) => {
 					</div>
 				</div>
 
-				<div className='bg-gray-700 p-10 rounded-3xl min-w-[400px]'>
+				<div className='bg-gray-700 p-10 rounded-3xl min-w-[400px] bigCardNeumorph'>
 					<h3 className='text-2xl text-center mb-8'>
 						Backend Development
 					</h3>

@@ -6,10 +6,26 @@
 	.heroButton {
 		@apply px-6 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#F7BA0A]/40 hover:text-[#F7BA0A]/40;
 	}
+
 }
 
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+}
+
+.cardNeumorph {
+	border-radius: 40px;
+	background: #374151;
+	box-shadow: -31px 31px 72px #2d3542,
+		31px -31px 72px #414d60;
+}
+
+.bigCardNeumorph {
+	background: rgba(55, 65, 81, 0.35);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
+	border-radius: 10px;
 }
