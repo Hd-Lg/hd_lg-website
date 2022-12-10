@@ -15,10 +15,10 @@ const About = (props: Props) => {
 				src={Profile_Picture}
 				alt='Profile Picture'
 				placeholder='blur'
-				className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-full md:w-64 md:h-90 xl:w-[500px] xl:h-[600px]'
+				className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 mt-10 object-cover md:rounded-full md:w-64 md:h-90 xl:w-[500px] xl:h-[600px]'
 			/>
 			<div className='space-y-5 px-0 md:px-10'>
-				<div className='flex justify-evenly'>
+				<div className='flex justify-evenly space-x-6'>
 					<article className='bg-gray-700 border border-transparent rounded-xl p-8 text-center hover:bg-transparent hover:border-white cardNeumorph'>
 						<AcademicCapIcon className='w-6 mx-auto mb-3' />
 						<h5>Experience</h5>

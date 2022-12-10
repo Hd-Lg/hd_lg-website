@@ -18,12 +18,7 @@ const Header = (props: Props) => {
 					target={'_blank'}>
 					Download CV
 				</Link>
-				<Link
-					href={'https://github.com/Hd-Lg'}
-					target={'_blank'}
-					rel='noopener noreferrer'>
-					My GitHub
-				</Link>
+				<a href={'#contact'}>Contact</a>
 			</div>
 		</header>
 	);
